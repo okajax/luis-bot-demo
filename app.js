@@ -26,3 +26,10 @@ server.post('/api/messages', connector.listen());
 bot.dialog('/', function (session) {
     session.send("Hello World");
 });
+
+// Serve a static web page
+// Webブラウザでアクセスされた時には、静的HTMLを表示させる
+server.get(/.*/, restify.serveStatic({
+    'directory': './static/',
+    'default': 'index.html'
+}));
