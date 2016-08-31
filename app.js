@@ -26,3 +26,9 @@ server.post('/api/messages', connector.listen());
 bot.dialog('/', function (session) {
     session.send("Hello World");
 });
+
+// Serve a static web page
+server.get(/.*/, restify.serveStatic({
+    'directory': './static/',
+    'default': 'index.html'
+}));
