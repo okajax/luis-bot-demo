@@ -59,8 +59,6 @@ intents
     // インテントが「AskWeather」と認識された時の処理
     //=======================================================
 
-    //slack_channel_check(session);
-
     console.log(args); // argesの中には、LUISの認識結果が入っている。
 
     //　例: 「明日の東京は？」
