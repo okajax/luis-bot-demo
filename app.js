@@ -98,24 +98,22 @@ intents
       forecast.get(forecastArea)
         .then(function (forecast) {
 
-          var forecastResult = "",
-            resultText = "";
+          var forecastResult = "", resultText = "";
 
           if (day) {
 
-            // 「日にち」エンティティが認識できた場合の処理
-            // -------------------------------------
+            // ▼ 「日にち」エンティティが認識できた場合の処理
 
             // 「日にち」エンティティの内容が、「明日」なら明日の天気情報を。
             // それ以外なら、今日の天気情報を用意する。
-            var forecastResult = (day.entity == "明日") ? forecast.tomorrow.text : forecast.today.text; // ※三項演算子を使用
+            forecastResult = (day.entity == "明日") ? forecast.tomorrow.text : forecast.today.text; // ※三項演算子を使用
             resultText += day.entity + "の ";
 
           } else {
 
-            // 「日にち」エンティティがなかった場合の処理
-            // -----------------------------------
+            // ▼ 「日にち」エンティティがなかった場合の処理
 
+            forecastResult = forecast.today.text;
             resultText += "今日の ";
 
           }
