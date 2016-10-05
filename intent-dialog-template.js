@@ -13,7 +13,7 @@ server.listen(process.env.port || process.env.PORT || 3978, function () {
 
 // ボットの接続先設定
 var connector = new builder.ChatConnector({
-  // MicrosoftBotFrameworkで取得した、IDとパスワードを入力します
+  // MicrosoftBotFramework公式サイトで取得した、IDとパスワードを入力します
   appId: '******************************',
   appPassword: '******************************'
 });
