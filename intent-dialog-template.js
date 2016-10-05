@@ -63,7 +63,7 @@ intents
         // インテントが 'intentC' だったときの処理をここに記述します。
 
 
-        // ▼ 応用編 ▼
+        // ▼ 応用 ▼
 
         // argesの中には、LUISの認識結果が入っています。
         console.log(args);
