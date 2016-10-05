@@ -58,6 +58,43 @@ intents
         // インテントが 'intentB' だったときの処理をここに記述します。
 
     })
+    .matches('intentC', function (session, args) {
+
+        // インテントが 'intentC' だったときの処理をここに記述します。
+
+
+        // ▼ 応用編 ▼
+
+        // argesの中には、LUISの認識結果が入っています。
+        console.log(args);
+
+            //  例: 「明日の東京は？」
+
+            //  { score: 1,
+            //  intent: 'AskWeather',
+            //  intents:
+            //   [ { intent: 'AskWeather', score: 1, actions: [Object] },
+            //     { intent: 'None', score: 0.0144235147 } ],
+            //  entities:
+            //   [ { entity: '東京',
+            //       type: '場所',
+            //       startIndex: 3,
+            //       endIndex: 4,
+            //       score: 0.9854452 },
+            //     { entity: '明日',
+            //       type: '日にち',
+            //       startIndex: 0,
+            //       endIndex: 1,
+            //       score: 0.963219762 } ] }
+
+
+        // EntityRecognizerを使うと、指定したエンティティの内容を抽出できます。
+        var area = builder.EntityRecognizer.findEntity(args.entities, '場所');
+        if (!area) {
+            session.send("あなたが天気を知りたい場所は、" + area + "ですね！"); // この場合、「東京」が出力されます。
+        }
+
+    })
 
     // ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
     // ※ インテントの数だけ .matches('*****', ... ) を繰り返します。
