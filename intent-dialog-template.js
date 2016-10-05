@@ -65,7 +65,7 @@ intents
 
         // ▼ 応用 ▼
 
-        // argesの中には、LUISの認識結果が入っています。
+        // argsの中には、LUISの認識結果が入っています。
         console.log(args);
 
             //  例: 「明日の東京は？」
