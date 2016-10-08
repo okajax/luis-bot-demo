@@ -90,7 +90,9 @@ intents
 
         // EntityRecognizerを使うと、指定したエンティティの内容を抽出できます。
         var area = builder.EntityRecognizer.findEntity(args.entities, '場所');
-        if (!area) {
+
+        // 「場所」エンティティが認識できた場合の処理
+        if (area) {
             session.send("あなたが天気を知りたい場所は、" + area + "ですね！"); // この場合、「東京」が出力されます。
         }
 
