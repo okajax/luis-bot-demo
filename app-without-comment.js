@@ -74,7 +74,7 @@ intents
     })
     .onDefault(
 
-        builder.DialogAction.send("ごめんなさい。学習不足でまったく理解できませんでした。orz")
+        builder.DialogAction.send("ごめんなさい。学習不足で意図が理解できませんでした。orz")
 
     );
 

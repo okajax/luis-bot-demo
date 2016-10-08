@@ -31,7 +31,7 @@ LUIS(自然言語理解AI)と連携しているので、学習して賢くなっ
 
 
 ## Powered by
-* Microsoft Bot Framework (V3)
+* Microsoft Bot Framework V3
 * LUIS (Microsoft Cognitive Services)
 * [weather-yahoo-jp](https://www.npmjs.com/package/weather-yahoo-jp)
 
