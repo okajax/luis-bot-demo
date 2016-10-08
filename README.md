@@ -30,7 +30,7 @@ LUIS(自然言語理解AI)と連携しているので、学習して賢くなっ
 　IntentDialogのひな形+解説です。コピペしてお使いください。
 
 
-## Powerd by
+## Powered by
 * Microsoft Bot Framework
 * LUIS (Microsoft Cognitive Services)
 * [weather-yahoo-jp](https://www.npmjs.com/package/weather-yahoo-jp)
