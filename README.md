@@ -1,21 +1,45 @@
-# LUIS demo bot
+# LUIS bot demo
 
-LUISと連携したBotのサンプルです。
-天気を教えてくれます。
+LUISと連携したBotのサンプルです。天気を教えてくれます。
 
-## 例
+LUISと連携しているので、学習して賢くなっていきます。
+
+ただ、インテントは「天気を尋ねる」ための物しか用意していないため、天気を答える事しかできません...！
+
+
+## つかいかた
 
 * 「大阪の天気は？」
 * 「明日の東京はどう？」
+* 「今日の名古屋！」
+
+のように、話しかけてあげてください。
+
+指定した場所の、今日または明日の天気を教えてくれます。
+
+(Yahoo!天気のスクレイピングのため、限界はあります...！)
 
 
 ## 各ファイルについて
 
-[app.js](https://github.com/okajax/luis-bot-demo/blob/master/app.js)が本体です。
+### [app.js](https://github.com/okajax/luis-bot-demo/blob/master/app.js)
 
-[app-without-comment.js](https://github.com/okajax/luis-bot-demo/blob/master/app-without-comment.js)は、コメントによる解説がないバージョンです。ソースだけで読みたい方、コピペしたい方向けです。
-
-[intent-dialog-template.js](https://github.com/okajax/luis-bot-demo/blob/master/intent-dialog-template.js)は、IntentDialogのひな形です。コピペしてお使いください。
+こちらが天気予報Botの本体です。
 
 
+### [app-without-comment.js](https://github.com/okajax/luis-bot-demo/blob/master/app-without-comment.js)
+
+コメントによる解説がないバージョンです。ソースだけでサクっと読みたい方、コピペして使いたい方向けです。
+
+
+### [intent-dialog-template.js](https://github.com/okajax/luis-bot-demo/blob/master/intent-dialog-template.js)
+
+IntentDialogのひな形+解説です。コピペしてお使いください。
+
+
+## Powerd by
+
+* Microsoft Bot Framework
+* LUIS (Microsoft Cognitive Services)
+* [weather-yahoo-jp](https://www.npmjs.com/package/weather-yahoo-jp)
 
