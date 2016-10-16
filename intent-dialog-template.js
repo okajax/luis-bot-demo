@@ -68,7 +68,7 @@ intents
         // argsの中には、LUISの認識結果が入っています。
         console.log(args);
 
-            //  例: 「明日の東京は？」
+            //  例えば、天気予報Botを想定したLUISの場合 : 「明日の東京の天気は？」を解析すると..
 
             //  { score: 1,
             //  intent: 'AskWeather',
@@ -86,6 +86,8 @@ intents
             //       startIndex: 0,
             //       endIndex: 1,
             //       score: 0.963219762 } ] }
+
+            // 上記のような結果が得られます。
 
 
         // EntityRecognizerを使うと、指定したエンティティの内容を抽出できます。
