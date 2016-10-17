@@ -72,11 +72,11 @@ intents
         }
 
     })
-    .onDefault(
+    .onDefault(function (session) {
 
         builder.DialogAction.send("ごめんなさい。学習不足で意図が理解できませんでした。orz")
 
-    );
+    });
 
 server.get(/.*/, restify.serveStatic({
     'directory': './static/',
