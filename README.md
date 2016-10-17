@@ -1,6 +1,6 @@
 # LUIS bot demo
 
-[デモサイト](https://github.com/okajax/luis-bot-demo)
+### [デモサイト](https://okajax-luis-bot-demo.azurewebsites.net/index.html)
 
 LUISと連携したBotのサンプルです。天気を教えてくれます。
 
